@@ -192,11 +192,16 @@ end
 
 #puts decreasing_sequence([5, 7, 3, 1, 2, 3, 7]) 
 
-def items_between_maxes(arr)
+def items_between_maxes_f_s(arr)
   max = arr.max
   max_indices = arr.each_index.select {|i| arr[i] == max}
-  arr.filter do |a| arr.find_index(a) > max_indices[0] &&
-    arr.find_index(a) < max_indices[1]
-  end
+  arr[max_indices[0] + 1..max_indices[1] - 1]
 end
-#puts items_between_maxes([7, 6, 3, 1, 2, 7, 7])
+#puts items_between_maxes_f_s([7, 6, 6, 1, 2, 7, 7])
+
+def items_between_maxes_f_l(arr)
+  max = arr.max
+  max_indices = arr.each_index.select {|i| arr[i] == max}
+  arr[max_indices[0] + 1..max_indices[-1] - 1]
+end
+#puts items_between_maxes_f_l([7, 6, 7, 3, 1, 2, 7, 7])
