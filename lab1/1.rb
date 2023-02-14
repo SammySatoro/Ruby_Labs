@@ -52,18 +52,17 @@ end
 # с данным, не делящегося на наименьший делитель исходно числа, и
 # суммы цифр числа, меньших 5
 
-# 2.1
-
-def ex_2
-  def gcd(a, b)
-    if a == 0 or b == 0 then
-      a + b
-    else
-      next_a = a > b ? a % b : a
-      next_b = a <= b ? b % a : b
-      gcd(next_a, next_b)
-    end
+def gcd(a, b)
+  if a == 0 or b == 0 then
+    a + b
+  else
+    next_a = a > b ? a % b : a
+    next_b = a <= b ? b % a : b
+    gcd(next_a, next_b)
   end
+end
+
+def ex_2_1
 
   def count_of_non_coprime(value, arr)
     counter = 0
@@ -75,3 +74,15 @@ def ex_2
 
   puts count_of_non_coprime(16, [*1..16])
 end
+
+def ex_2_2
+  def max_value_dividing_by_3(value)
+    max = -1
+    value.digits.each { |i|
+      max = max < i && i % 3 != 0 ? i : max
+    }
+    max
+  end
+  puts max_value_dividing_by_3(6732753)
+end
+
