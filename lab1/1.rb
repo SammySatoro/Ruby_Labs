@@ -114,3 +114,54 @@ def ex_2_3
   end
   puts max_value(127, [*1..16]) * sum_least_than_5(127)
 end
+
+  #Задание 3 Массивы.
+# Задачи.
+  
+# 1 Написать методы, которые находят минимальный,
+# элементы, номер первого положительного элемента. Каждая
+# операция в отдельном методе. Решить задачу с помощью
+# циклов(for и while).
+
+
+def find_min_for(arr)
+  min = arr[0]
+  for i in arr
+    min = min > i ? i : min
+  end
+  min
+end
+
+def find_min_while(arr)
+  min = arr[0]
+  i = 0
+  while i < arr.length
+    min = min > arr[i] ? arr[i] : min
+    i += 1
+  end
+  min
+end
+
+def find_first_positive_for(arr)
+  first_pos = 0
+  for i in arr
+    if i > 0 then return i end
+  end
+  first_pos
+end
+
+def find_first_positive_while(arr)
+  first_pos = 0
+  i = 0
+  while i < arr.length
+    if arr[i] > 0 then return arr[i] end
+    i += 1
+  end
+  first_pos
+end 
+ 
+# 2 Написать программу, которая принимает как аргумент два
+# значения. Первое значение говорит, какой из методов задачи
+# 1 выполнить, второй говорит о том, откуда читать список
+# аргументом должен быть написан адрес файла. Далее
+# необходимо прочитать массив и выполнить метод.
