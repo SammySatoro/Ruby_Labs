@@ -3,10 +3,11 @@ def ex_1
   puts('Hello World')
 
   # 1.2
-  puts 'What\'s your name?'
-  name = gets.chop
-  puts "Hello, #{name} \nWhat is your favorite programming language?"
-  answer = gets.chop.downcase
+  username = ARGV[0]
+ 
+  puts "What\'s your name?"
+  puts "Hello, #{username} \nWhat is your favorite programming language?"
+  answer = STDIN.gets.chop.downcase
   case answer
   when 'ruby'
     puts 'Ma boy!'
@@ -33,6 +34,16 @@ def ex_1
   else
     puts 'It will be ruby soon'
   end
+
+  # 1.3
+  puts 'Enter any ruby code:'
+  input_1 = STDIN.gets.chop
+  eval input_1
+
+  puts 'Enter any Linux command:'
+  input2 = `#{STDIN.gets.chop}`
+  puts input2
+end
 
   # 1.3
   puts 'Enter any ruby code:'
