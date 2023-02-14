@@ -171,4 +171,23 @@ def do_stuff(func, data_source_path)
   arr = data.readline.split(' ').map(&:to_i)
   self.send(func, arr)
 end
-puts do_stuff(:find_first_positive_for, 'source.txt')
+#puts do_stuff(:find_first_positive_for, 'source.txt')
+
+#Задание 4 Методы, принимающие блок как аргумент
+# Задачи.
+# Решить предложенные задачи по вариантам. Задание в отдельную
+# программу. Каждая задача отдельный метод БЕЗ ИСПОЛЬЗОВАНИЯ
+# ЦИКЛОВ. Реализовать выбор пользователя какую задачу решать.
+# Чтение из файла или с клавиатуры. Каждый метод отдельный коммит.
+# Итоговая задача – отдельный коммит.
+# Вариант4. Задачи 4, 16, 28, 40, 52
+
+# 4
+# 5 7 3 1 2 3 7
+# 0 1 2 3 4 5 6
+# 1 6 0 2 5 4 3
+def decreasing_sequence(arr)
+  (0..arr.size - 1).sort_by { |a| -arr[a] }
+end
+
+#puts decreasing_sequence([5, 7, 3, 1, 2, 3, 7]) 
