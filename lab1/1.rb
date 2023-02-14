@@ -86,3 +86,31 @@ def ex_2_2
   puts max_value_dividing_by_3(6732753)
 end
 
+def least_divisor(value)
+  least_div = value
+  (2..value).each { |i|
+    if value % i == 0
+      least_div = i
+      break
+    end
+  }
+  least_div
+end
+
+def ex_2_3
+  def max_value(value, arr)
+    max = arr[0]
+    arr.each { |i|
+      max = max < i && gcd(value, i) != 0 && i % least_divisor(value) != 0 ? i : max
+    }
+    max
+  end
+  def sum_least_than_5(value)
+    sum = 0
+    value.digits.each { |i|
+      sum += i < 5 ? i : 0
+    }
+    sum
+  end
+  puts max_value(127, [*1..16]) * sum_least_than_5(127)
+end
