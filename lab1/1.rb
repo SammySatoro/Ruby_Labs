@@ -165,3 +165,10 @@ end
 # 1 выполнить, второй говорит о том, откуда читать список
 # аргументом должен быть написан адрес файла. Далее
 # необходимо прочитать массив и выполнить метод.
+
+def do_stuff(func, data_source_path)
+  data = File.open(data_source_path)
+  arr = data.readline.split(' ').map(&:to_i)
+  self.send(func, arr)
+end
+puts do_stuff(:find_first_positive_for, 'source.txt')
