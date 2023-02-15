@@ -211,3 +211,19 @@ def items_between_maxes_f_l(arr)
   arr[max_indices[0] + 1..max_indices[-1] - 1]
 end
 #puts items_between_maxes_f_l([7, 6, 7, 3, 1, 2, 7, 7])
+
+def find_min_even(arr)
+  arr.filter {|a| a % 2 == 0}.min || 'no even numbers'
+end
+#puts find_min_even [1, 4, 5, -6, 1, -2]
+
+def prime?(value)
+  (2..value - 1).filter {|d| value % d == 0}.length == 0 &&
+    !(0..1).include?(value)
+end
+
+def create_list_prime_divisors(value, alpha)
+  (2..value - 1).filter {|d| prime?(d) && value % d == 0}.
+    map {|x| value % (x ** alpha) != 0 ? x : [x] * alpha}
+end
+#puts create_list_prime_divisors 1125, 3
