@@ -45,16 +45,6 @@ def ex_1
   puts input2
 end
 
-  # 1.3
-  puts 'Enter any ruby code:'
-  input_1 = gets.chop
-  eval input_1
-
-  puts 'Enter any Linux command:'
-  input2 = `#{gets.chop}`
-  puts input2
-end
-
 # 2
 # Вариант № 4
 # Метод 1 Найти количество четных чисел, не взаимно простых с данным
@@ -177,12 +167,17 @@ end
 # аргументом должен быть написан адрес файла. Далее
 # необходимо прочитать массив и выполнить метод.
 
-def do_stuff(func, data_source_path)
-  data = File.open(data_source_path)
-  arr = data.readline.split(' ').map(&:to_i)
-  self.send(func, arr)
+def do_3_2
+  args = ARGV
+  def do_stuff(func, data_source_path)
+    puts func.class
+    data = File.open(data_source_path)
+    arr = data.readline.split(' ').map(&:to_i)
+    self.send(func, arr)
+  end
+  puts do_stuff( "#{args[0]}".to_sym, args[1])
 end
-#puts do_stuff(:find_first_positive_for, 'source.txt')
+#do_3_2
 
 #Задание 4 Методы, принимающие блок как аргумент
 # Задачи.
