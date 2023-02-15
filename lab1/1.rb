@@ -227,3 +227,29 @@ def create_list_prime_divisors(value, alpha)
     map {|x| value % (x ** alpha) != 0 ? x : [x] * alpha}
 end
 #puts create_list_prime_divisors 1125, 3
+
+def method_selection
+  methods = %w[decreasing_sequence items_between_maxes_f_s items_between_maxes_f_l find_min_even create_list_prime_divisors]
+  puts "Select method by index:
+    0. exit selection
+    1. decreasing_sequence (array)
+    2. items_between_maxes_f_s (array)
+    3. items_between_maxes_f_l (array)
+    4. find_min_even (array)
+    5. create_list_prime_divisors (value, alpha)"
+  method_index = STDIN.gets.chop.to_i
+  if method_index > 0 && method_index <= 4
+    puts 'Array: '
+    arr = STDIN.gets.chop.split(' ').map(&:to_i)
+    eval "puts #{methods[method_index - 1]} #{arr}"
+  elsif method_index == 5
+    puts 'Value: '
+    value = STDIN.gets.chop.to_i
+    puts 'Alpha: '
+    alpha = STDIN.gets.chop.to_i
+    eval "puts #{methods[method_index - 1]} #{value}, #{alpha}"
+  else
+    puts 'Bye!'
+  end
+end
+#method_selection
