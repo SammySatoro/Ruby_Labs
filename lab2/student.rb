@@ -49,8 +49,24 @@ class Student
     contact
   end
 
-  def self.is_valid_phone_number?(phone_number)
+  def is_phone_number_valid?(phone_number)
     phone_number =~ PHONE_NUMBER_REGEX
+  end
+
+  def git_exists?
+    return true if @git
+
+    false
+  end
+
+  def contact_data_exists?
+    return true if @phone_number || @email || @telegram
+
+    false
+  end
+
+  def validate
+    git_exists? && contact_data_exists?
   end
 
 end
