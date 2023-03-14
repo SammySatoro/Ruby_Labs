@@ -6,7 +6,7 @@ class Student
 
   EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d-]+(\.[a-z\d-]+)*\.[a-z]+\z/i.freeze
 
-  PHONE_NUMBER_REGEX = /\A\+?\d{11}\z/.freeze
+  PHONE_NUMBER_REGEX = /\+?\d{11}\z/.freeze
 
   GIT_REGEX = %r{\Ahttps://github\.com/\w+\z}.freeze
 
@@ -18,11 +18,8 @@ class Student
 
     raise ArgumentError, 'surname, first_name and patronymic are necessary to instantiate the object' unless
       @surname && @first_name && @patronymic
-    
-    
-    @phone_number = (validate_contact_data(params[:phone_number], PHONE_NUMBER_REGEX) if params[:phone_number])
-    @email = (validate_contact_data(params[:email], EMAIL_REGEX) if params[:email])
-    @git = (validate_contact_data(params[:git], GIT_REGEX) if params[:git])
+
+    set_contacts(params[:phone_number], params[:email], params[:telegram])
 
     @telegram = params[:telegram]
   end
@@ -54,13 +51,18 @@ class Student
   end
 
   def git_exists?
-    return true if @git
+    (puts "git: #{@git}") || (return true) if @git
 
     false
   end
 
   def contact_data_exists?
-    return true if @phone_number || @email || @telegram
+    if @phone_number || @email || @telegram
+      (@phone_number && (puts "phone number: #{@phone_number}")) ||
+        (@email && (puts "email: #{@email}")) ||
+        (@telegram && (puts "telegram: #{@telegram}")) ||
+        (return true)
+    end
 
     false
   end
@@ -69,4 +71,12 @@ class Student
     git_exists? && contact_data_exists?
   end
 
+  def set_contacts(phone_number, email, telegram)
+    @phone_number = (validate_contact_data(phone_number, PHONE_NUMBER_REGEX) if phone_number)
+    @email = (validate_contact_data(email, EMAIL_REGEX) if email)
+    @git = (validate_contact_data(telegram, GIT_REGEX) if git)
+  end
+
 end
+
+
