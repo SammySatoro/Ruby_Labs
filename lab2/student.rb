@@ -10,6 +10,8 @@ class Student
 
   GIT_REGEX = %r{\Ahttps://github\.com/\w+\z}.freeze
 
+  TELEGRAM_REGEX = /@\w+\b/.freeze
+
   def initialize(params = {})
     @id = params[:id]
     @surname = params[:surname]
@@ -89,7 +91,24 @@ class Student
     @phone_number = (validate_contact_data(phone_number, PHONE_NUMBER_REGEX) if phone_number)
     @email = (validate_contact_data(email, EMAIL_REGEX) if email)
     @git = (validate_contact_data(git, GIT_REGEX) if git)
-    @telegram = telegram if telegram
+    @telegram = (validate_contact_data(telegram, TELEGRAM_REGEX) if telegram)
+  end
+
+  def initials
+    "#{@surname} #{@first_name[0]}.#{@patronymic[0]}."
+  end
+
+  def contact_data
+    contacts = {}
+    contacts[:phone_number] = @phone_number if @phone_number
+    contacts[:email] = @email if @email
+    contacts[:telegram] = @telegram if @telegram
+    contacts
+  end
+
+  def get_info
+    contacts = contact_data
+    "#{initials} GIT: #{@git} #{contacts.keys[0].to_s.upcase.sub('_', ' ')}: #{contacts.values[0]}"
   end
 
 end
