@@ -1,116 +1,72 @@
 # frozen_string_literal: true
+require_relative 'student_regexes'
+require_relative 'super_student'
 
-class Student
-  attr_accessor :id, :surname, :first_name, :patronymic, :telegram
-  attr_reader :phone_number, :email, :git
+class Student < SuperStudent
+  include(StudentRegexes)
 
-  EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d-]+(\.[a-z\d-]+)*\.[a-z]+\z/i.freeze
+  public_class_method :new
 
-  PHONE_NUMBER_REGEX = /\+?\d{11}\z/.freeze
+  public :id, :id=, :git, :git=, :phone_number, :phone_number=, :telegram, :telegram=, :email, :email=
 
-  GIT_REGEX = %r{\Ahttps://github\.com/\w+\z}.freeze
+  def self.from_string(id, values)
+    fields_list = [:id, :surname, :first_name, :patronymic, :git, :phone, :telegram, :email]
 
-  TELEGRAM_REGEX = /@\w+\b/.freeze
+    begin
+      values_list = [id] + values.split(FROM_STRING_REGEX)
+      raise ArgumentError, `Invalid number of values: #{values_list.size}, should be #{fields_list.size}`unless
+        values_list.size == fields_list.size
 
-  def initialize(params = {})
-    @id = params[:id]
-    @surname = params[:surname]
-    @first_name = params[:first_name]
-    @patronymic = params[:patronymic]
-
-    raise ArgumentError, 'surname, first_name and patronymic are necessary to instantiate the object' unless
-      @surname && @first_name && @patronymic
-
-    set_contacts(params[:phone_number], params[:email], params[:telegram], params[:git])
-
-  end
-
-  def self.from_string(string)
-    id, surname, first_name, patronymic, phone_number, telegram, email, git = string.split(',')
-    params = {
-      id: id,
-      surname: surname,
-      first_name: first_name,
-      patronymic: patronymic,
-      phone_number: phone_number,
-      telegram: telegram,
-      email: email,
-      git: git
-    }
-    new(params)
-  end
-
-  def phone_number=(value)
-    @phone_number = (validate_contact_data(value, PHONE_NUMBER_REGEX) if value)
-  end
-
-  def email=(value)
-    @email = (validate_contact_data(value, EMAIL_REGEX) if value)
-  end
-
-  def git=(value)
-    @git = (validate_contact_data(value, GIT_REGEX) if value)
-  end
-
-  def to_s
-    "ID: #{@id}, Surname: #{@surname}, Name: #{@first_name}, Patronymic: #{@patronymic}, Phone number: #{@phone_number}, Telegram: #{@telegram}, Email: #{@email}, Git: #{@git}"
-  end
-
-  def validate_contact_data(contact, regex)
-    raise ArgumentError, 'Invalid contact format' unless contact =~ regex || contact == ''
-
-    contact
-  end
-
-  def is_phone_number_valid?(phone_number)
-    phone_number =~ PHONE_NUMBER_REGEX
-  end
-
-  def git_exists?
-    (puts "git: #{@git}") || (return true) if @git
-
-    false
-  end
-
-  def contact_data_exists?
-    if @phone_number || @email || @telegram
-      (@phone_number && (puts "phone number: #{@phone_number}")) ||
-        (@email && (puts "email: #{@email}")) ||
-        (@telegram && (puts "telegram: #{@telegram}")) ||
-        (return true)
+      args = values_list.zip(fields_list).to_h
+      from_hash(args)
+    rescue ArgumentError
+      puts 'Cannot parse values...'
     end
-
-    false
   end
 
-  def validate
-    git_exists? && contact_data_exists?
+  def Student.from_hash(args)
+    id = args.delete(:id)
+    last_name = args.delete(:last_name)
+    first_name = args.delete(:first_name)
+    patronymic = args.delete(:patronymic)
+    new(id, last_name, first_name, patronymic, **args)
   end
 
-  def set_contacts(phone_number, email, telegram, git)
-    @phone_number = (validate_contact_data(phone_number, PHONE_NUMBER_REGEX) if phone_number)
-    @email = (validate_contact_data(email, EMAIL_REGEX) if email)
-    @git = (validate_contact_data(git, GIT_REGEX) if git)
-    @telegram = (validate_contact_data(telegram, TELEGRAM_REGEX) if telegram)
+  def Student.valid_name_part?(value)
+    value.match?(NAME_PART_REGEX)
   end
 
-  def initials
-    "#{@surname} #{@first_name[0]}.#{@patronymic[0]}."
+  def initialize(id, surname, first_name, patronymic, git:nil, phone_number:nil, telegram:nil, email:nil)
+    raise(ArgumentError, 'surname, first_name and patronymic are required!') unless
+      surname && first_name && patronymic
+    self.id = id
+    self.surname = surname
+    self.first_name = first_name
+    self.patronymic = patronymic
+    self.git = git
+    self.phone_number = phone_number
+    self.telegram = telegram
+    self.email = email
   end
 
-  def contact_data
-    contacts = {}
-    contacts[:phone_number] = @phone_number if @phone_number
-    contacts[:email] = @email if @email
-    contacts[:telegram] = @telegram if @telegram
-    contacts
+  def surname=(value)
+    raise(ArgumentError, `invalid argument: #{value}`) unless !value.nil? && Student.valid_name_part?(value)
+    @surname = value
+  end
+
+  def first_name=(value)
+    raise(ArgumentError, `invalid argument: #{value}`) unless !value.nil? && Student.valid_name_part?(value)
+    @first_name = value
+  end
+
+  def patronymic=(value)
+    raise(ArgumentError, `invalid argument: #{value}`) unless !value.nil? && Student.valid_name_part?(value)
+    @patronymic = value
   end
 
   def get_info
-    contacts = contact_data
-    "#{initials} GIT: #{@git} #{contacts.keys[0].to_s.upcase.sub('_', ' ')}: #{contacts.values[0]}"
+    contacts = [@phone_number, @telegram, @email]
+    "#{@surname} #{@first_name[0]}. #{@patronymic[0]}., #{@git ? @git : '-'}, #{!contacts.empty? ? contacts[0] : '-'}"
   end
 
 end
-
-
