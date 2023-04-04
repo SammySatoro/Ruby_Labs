@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-require_relative 'student_regexes'
 require_relative 'super_student'
 
 class Student < SuperStudent
@@ -9,27 +8,47 @@ class Student < SuperStudent
 
   public :id, :id=, :git, :git=, :phone_number, :phone_number=, :telegram, :telegram=, :email, :email=
 
-  def self.from_string(id, values)
-    fields_list = [:id, :surname, :first_name, :patronymic, :git, :phone, :telegram, :email]
+  def Student.from_string(id, values)
+    fields_list = [:id, :surname, :first_name, :patronymic, :git, :phone_number, :telegram, :email]
 
     begin
       values_list = [id] + values.split(FROM_STRING_REGEX)
+      values_list.map! { |value| value == '-' ? nil : value}
       raise ArgumentError, `Invalid number of values: #{values_list.size}, should be #{fields_list.size}`unless
         values_list.size == fields_list.size
 
-      args = values_list.zip(fields_list).to_h
+      args = fields_list.zip(values_list).to_h
       from_hash(args)
     rescue ArgumentError
       puts 'Cannot parse values...'
     end
   end
+  
+  def Student.read_from_txt(path)
+    File.readlines(path).map.with_index do |line, index|
+      Student.from_string(index, line.chomp)
+    end
+  end
 
+  def Student.white_to_txt(path, student_list)
+    txt_file = File.open(path, 'w')
+    student_list.each do |student|
+      temp_str = ""
+      student.instance_variables.each { |field|
+        value = student.instance_variable_get(field)
+        temp_str += "#{value == nil ? '-' : value}, "
+      }
+      txt_file.write("#{temp_str}\n")
+    end
+    txt_file.close
+  end
+  
   def Student.from_hash(args)
     id = args.delete(:id)
-    last_name = args.delete(:last_name)
+    surname = args.delete(:surname)
     first_name = args.delete(:first_name)
     patronymic = args.delete(:patronymic)
-    new(id, last_name, first_name, patronymic, **args)
+    new(id, surname, first_name, patronymic, **args)
   end
 
   def Student.valid_name_part?(value)
