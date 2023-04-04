@@ -25,6 +25,7 @@ class Student < SuperStudent
   end
   
   def Student.read_from_txt(path)
+    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     File.readlines(path).map.with_index do |line, index|
       Student.from_string(index, line.chomp)
     end
