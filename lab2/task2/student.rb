@@ -84,7 +84,7 @@ class Student < SuperStudent
   end
 
   def get_info
-    contacts = [@phone_number, @telegram, @email]
+    contacts = [@phone_number, @telegram, @email].compact
     "#{@surname} #{@first_name[0]}. #{@patronymic[0]}., #{@git ? @git : '-'}, #{!contacts.empty? ? contacts[0] : '-'}"
   end
 
