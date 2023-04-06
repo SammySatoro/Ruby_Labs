@@ -62,11 +62,38 @@ class StudentListTXT
     @students_list << object
   end
 
+  def replace(id, object)
+    unless object.is_a?(Student)
+      raise ArgumentError, 'You can only replace with objects of the Student class!'
+    end
+
+    index = @students_list.find_index { |student| student.id == id.to_s }
+
+    raise ArgumentError, "The list doesn't contain Student with a such ID' unless" unless index
+
+    @students_list[index] = object
+    nil
+  end
+
+  def delete(id)
+    index = @students_list.find_index { |student| student.id == id.to_s }
+
+    raise ArgumentError, "The list doesn't contain Student with a such ID' unless" unless index
+
+    @students_list.delete_at(index)
+    nil
+  end
+
+  def length
+    @students_list.length
+  end
+
 end
 
 slt = StudentListTXT.new('lab2/task2/students_set.txt')
-slt.sort_by_full_name!(:asc)
-test = Student.from_string(40, 'Qwe, Ewq, Weq, https://github.com/SammySatoro, +7-918-334-32-58, -, -')
+# slt.sort_by_full_name!(:asc)
+test = Student.from_string(40, 'Here, Ewq, Weq, https://github.com/SammySatoro, +7-918-334-32-58, -, -')
 slt.add(test)
+slt.delete(1)
 slt.write_to_txt('lab2/task2/output_file.txt')
-puts slt.get_k_n_student_short_list(1, 2).data
+puts slt.length
