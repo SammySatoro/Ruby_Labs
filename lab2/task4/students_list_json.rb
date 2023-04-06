@@ -98,16 +98,16 @@ class StudentListJSON
     nil
   end
 
-  def length
+  def students_count
     @students_list.length
   end
 
 end
 
-slt = StudentListJSON.new('lab2/task4/students_set.json')
-# # slt.sort_by_full_name!(:asc)
-# test = Student.from_string(40, 'Here, Ewq, Weq, https://github.com/SammySatoro, +7-918-334-32-58, -, -')
-# slt.add(test)
-slt.delete(0)
-slt.write_to_json('lab2/task4/output_file.json')
-# puts slt.length
+# slt = StudentListJSON.new('lab2/task4/students_set.json')
+# # # slt.sort_by_full_name!(:asc)
+# # test = Student.from_string(40, 'Here, Ewq, Weq, https://github.com/SammySatoro, +7-918-334-32-58, -, -')
+# # slt.add(test)
+# slt.delete(0)
+# slt.write_to_json('lab2/task4/output_file.json')
+# puts slt.count

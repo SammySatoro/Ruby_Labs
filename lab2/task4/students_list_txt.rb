@@ -84,16 +84,9 @@ class StudentListTXT
     nil
   end
 
-  def length
+  def students_count
     @students_list.length
   end
 
 end
 
-slt = StudentListTXT.new('lab2/task2/students_set.txt')
-# slt.sort_by_full_name!(:asc)
-test = Student.from_string(40, 'Here, Ewq, Weq, https://github.com/SammySatoro, +7-918-334-32-58, -, -')
-slt.add(test)
-slt.delete(1)
-slt.write_to_txt('lab2/task2/output_file.txt')
-puts slt.length
