@@ -33,10 +33,3 @@ class StudentListYAML < StudentListSuper
   end
 
 end
-
-slt = StudentListYAML.new('lab2/task4/students_set.yaml')
-slt.sort_by_full_name!(:asc)
-test = Student.from_string(40, 'Here, Ewq, Weq, https://github.com/SammySatoro, +7-918-334-32-58, -, -')
-slt.add(test)
-slt.write_to_file('lab2/task4/output_file.yaml')
-puts slt.students_count
