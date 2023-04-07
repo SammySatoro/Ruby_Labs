@@ -12,6 +12,7 @@ class StudentListJSON
   end
 
   def read_from_json(path)
+    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     data = JSON.parse(File.read(path))
     data.map do |object|
       new_object = object.map do |key, value|
@@ -25,6 +26,7 @@ class StudentListJSON
   end
 
   def write_to_json(path)
+    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     students_as_hashes = @students_list.map(&:to_hash)
 
     File.open(path, 'w') do |file|
@@ -37,15 +39,6 @@ class StudentListJSON
     @students_list.find { |obj| obj.id == id.to_s }
   end
 
-  # def get_k_n_student_short_list(from, quantity, data_list=nil)
-  #
-  #   if data_list
-  #     raise ArgumentError, "DataListStudentShort object should be passed! data_list class: #{data_list.class}" unless
-  #       data_list.is_a?(DataListStudentShort)
-  #
-  #   end
-  #
-  # end
 
   def get_k_n_student_short_list(start_from, quantity, data_list = nil)
     short_students = @students_list.map {|obj| StudentShort.from_object(obj)}
@@ -104,10 +97,3 @@ class StudentListJSON
 
 end
 
-# slt = StudentListJSON.new('lab2/task4/students_set.json')
-# # # slt.sort_by_full_name!(:asc)
-# # test = Student.from_string(40, 'Here, Ewq, Weq, https://github.com/SammySatoro, +7-918-334-32-58, -, -')
-# # slt.add(test)
-# slt.delete(0)
-# slt.write_to_json('lab2/task4/output_file.json')
-# puts slt.count

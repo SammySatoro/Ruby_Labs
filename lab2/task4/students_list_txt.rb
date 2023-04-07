@@ -12,26 +12,18 @@ class StudentListTXT
   end
 
   def read_from_txt(path)
+    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     @students_list = Student.read_from_txt(path)
   end
 
   def write_to_txt(path)
+    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     Student.white_to_txt(path, @students_list)
   end
 
   def student_by_id(id)
     @students_list.find { |obj| obj.id == id.to_s }
   end
-
-  # def get_k_n_student_short_list(from, quantity, data_list=nil)
-  #
-  #   if data_list
-  #     raise ArgumentError, "DataListStudentShort object should be passed! data_list class: #{data_list.class}" unless
-  #       data_list.is_a?(DataListStudentShort)
-  #
-  #   end
-  #
-  # end
 
   def get_k_n_student_short_list(start_from, quantity, data_list = nil)
     short_students = @students_list.map {|obj| StudentShort.from_object(obj)}
