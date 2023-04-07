@@ -26,6 +26,7 @@ class Student < SuperStudent
   
   def Student.read_from_txt(path)
     raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
+
     File.readlines(path).map.with_index do |line, index|
       Student.from_string(index, line.chomp)
     end
@@ -59,6 +60,7 @@ class Student < SuperStudent
   def initialize(id, surname, first_name, patronymic, git:nil, phone_number:nil, telegram:nil, email:nil)
     raise(ArgumentError, 'surname, first_name and patronymic are required!') unless
       surname && first_name && patronymic
+
     self.id = id
     self.surname = surname
     self.first_name = first_name
@@ -71,16 +73,19 @@ class Student < SuperStudent
 
   def surname=(value)
     raise(ArgumentError, `invalid argument: #{value}`) unless !value.nil? && Student.valid_name_part?(value)
+
     @surname = value
   end
 
   def first_name=(value)
     raise(ArgumentError, `invalid argument: #{value}`) unless !value.nil? && Student.valid_name_part?(value)
+
     @first_name = value
   end
 
   def patronymic=(value)
     raise(ArgumentError, `invalid argument: #{value}`) unless !value.nil? && Student.valid_name_part?(value)
+
     @patronymic = value
   end
 
