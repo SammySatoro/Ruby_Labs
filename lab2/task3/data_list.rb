@@ -43,4 +43,5 @@ class DataList
     @selected = []
     nil
   end
+
 end
