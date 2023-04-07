@@ -1,4 +1,3 @@
 0, Стрелков, Игорь, Иванович, https://github.com/SammySatoro, +7-918-334-32-58, -, -, 
 1, Гиркин, Игорь, Всеволодович, https://github.com/tyagi_barhatnye, -, @pupupu, -, 
 2, Стронг, Эмиль, Дмитриевич, https://github.com/yoBN_M, -, -, kefteme@gmail.com, 
-3, Here, Ewq, Weq, https://github.com/SammySatoro, +7-918-334-32-58, -, -, 

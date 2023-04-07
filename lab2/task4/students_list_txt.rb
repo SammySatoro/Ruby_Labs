@@ -8,15 +8,17 @@ class StudentListTXT < StudentListSuper
     super
   end
 
-  def init(path)
-    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
-    @students_list = Student.read_from_txt(path)
-  end
-
   def write_to_file(path)
     raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     Student.white_to_txt(path, @students_list)
   end
 
-end
+  protected
 
+  def init(path)
+    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
+    @students_list = Student.read_from_txt(path)
+  end
+
+
+end

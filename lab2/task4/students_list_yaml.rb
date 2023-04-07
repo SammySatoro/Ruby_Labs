@@ -9,6 +9,17 @@ class StudentListYAML < StudentListSuper
     super
   end
 
+  def write_to_file(path)
+    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
+    students_as_hashes = @students_list.map { |student| student.to_hash }
+
+    File.open(path, 'w') do |file|
+      file.write(students_as_hashes.to_yaml)
+    end
+  end
+
+  protected
+
   def init(path)
     raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     yaml_data = YAML.load_file(path)
@@ -20,15 +31,6 @@ class StudentListYAML < StudentListSuper
         ]
       end.to_h
       Student.from_hash(new_object)
-    end
-  end
-
-  def write_to_file(path)
-    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
-    students_as_hashes = @students_list.map { |student| student.to_hash }
-
-    File.open(path, 'w') do |file|
-      file.write(students_as_hashes.to_yaml)
     end
   end
 

@@ -9,6 +9,18 @@ class StudentListJSON < StudentListSuper
     super
   end
 
+  def write_to_file(path)
+    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
+    students_as_hashes = @students_list.map(&:to_hash)
+
+    File.open(path, 'w') do |file|
+      file.write(JSON.pretty_generate(students_as_hashes))
+
+    end
+  end
+
+  protected
+
   def init(path)
     raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     data = JSON.parse(File.read(path))
@@ -23,15 +35,6 @@ class StudentListJSON < StudentListSuper
     end
   end
 
-  def write_to_file(path)
-    raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
-    students_as_hashes = @students_list.map(&:to_hash)
-
-    File.open(path, 'w') do |file|
-      file.write(JSON.pretty_generate(students_as_hashes))
-
-    end
-  end
-
 end
+
 
