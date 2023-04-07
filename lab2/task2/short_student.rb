@@ -1,4 +1,5 @@
 require_relative 'super_student'
+require_relative '../task2/student_regexes'
 
 class StudentShort < SuperStudent
 

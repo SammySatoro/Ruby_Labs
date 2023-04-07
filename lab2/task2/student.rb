@@ -94,4 +94,17 @@ class Student < SuperStudent
     "#{@surname} #{@first_name[0]}. #{@patronymic[0]}., #{@git ? @git : '-'}, #{!contacts.empty? ? contacts[0] : '-'}"
   end
 
+  def to_hash
+    {
+      id: @id,
+      surname: @surname,
+      first_name: @first_name,
+      patronymic: @patronymic,
+      git: @git,
+      phone_number: @phone_number,
+      telegram: @telegram,
+      email: @email
+    }
+  end
+
 end
