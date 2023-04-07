@@ -1,5 +1,15 @@
 [
   {
+    "id": "0",
+    "surname": "Стрелков",
+    "first_name": "Игорь",
+    "patronymic": "Иванович",
+    "git": "https://github.com/SammySatoro",
+    "phone_number": "+7-918-334-32-58",
+    "telegram": null,
+    "email": null
+  },
+  {
     "id": "2",
     "surname": "Стронг",
     "first_name": "Эмиль",
@@ -11,6 +21,16 @@
   },
   {
     "id": "3",
+    "surname": "Here",
+    "first_name": "Ewq",
+    "patronymic": "Weq",
+    "git": "https://github.com/SammySatoro",
+    "phone_number": "+7-918-334-32-58",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "id": "4",
     "surname": "Here",
     "first_name": "Ewq",
     "patronymic": "Weq",
