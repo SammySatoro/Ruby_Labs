@@ -1,13 +1,10 @@
-# frozen_string_literal: true
 
-class FileStrategy
-
-  def initialize(file_path)
-    @file_path = file_path
+module FileStrategy
+  def read_the_file(path)
+    raise "read_from_file method is not mplemented!"
   end
 
-  def write_to_file(file_path); end
-
-  def read_from_file(file_path); end
-
+  def write_to_file(path)
+    raise "write_to_file method is not mplemented!"
+  end
 end
