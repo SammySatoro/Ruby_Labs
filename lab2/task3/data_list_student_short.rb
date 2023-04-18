@@ -27,4 +27,12 @@ class DataListStudentShort < DataList
     end
   end
 
+  def get_names_hop
+    @names
+  end
+
+  def get_data_hop
+    @data
+  end
+
 end

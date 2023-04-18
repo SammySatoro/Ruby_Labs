@@ -1,12 +1,4 @@
 ---
-- :id: '3'
-  :surname: Here
-  :first_name: Ewq
-  :patronymic: Weq
-  :git: https://github.com/SammySatoro
-  :phone_number: "+7-918-334-32-58"
-  :telegram:
-  :email:
 - :id: '0'
   :surname: Стрелков
   :first_name: Игорь
@@ -23,7 +15,7 @@
   :phone_number:
   :telegram:
   :email: kefteme@gmail.com
-- :id: '4'
+- :id: '3'
   :surname: Here
   :first_name: Ewq
   :patronymic: Weq

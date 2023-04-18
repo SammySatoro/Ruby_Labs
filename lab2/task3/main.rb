@@ -21,6 +21,8 @@ student_arr = [test4, test5, test6]
 data_list_ss = DataListStudentShort.new(student_arr)
 # data_list.list = [test14, test15, test16]
 
+puts data_list_ss.get_data
+
 puts "get_selected\n"
 data_list_ss.add_to_selection(2)
 print "#{data_list_ss.get_selected}\n"

@@ -44,4 +44,18 @@ class DataList
     nil
   end
 
+  def get_names
+    get_names_hop
+  end
+
+  def get_data
+    get_data_hop
+  end
+
+  protected
+
+  def get_names_hop; end
+
+  def get_data_hop; end
+
 end
