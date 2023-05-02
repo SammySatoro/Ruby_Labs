@@ -1,26 +1,19 @@
-require_relative 'student_list_super.rb'
+require_relative 'strategy'
 require 'yaml'
 
-class StudentListYAML < StudentListStrategy
+class YAMLStrategy
+  include Strategy
 
-  public_class_method :new
-
-  def initialize(path)
-    super
-  end
-
-  def write_to_file(path)
+  def write_to_file(path, data)
     raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
-    students_as_hashes = @students_list.map { |student| student.to_hash }
+    students_as_hashes = data.map(&:to_hash)
 
     File.open(path, 'w') do |file|
       file.write(students_as_hashes.to_yaml)
     end
   end
 
-  protected
-
-  def init(path)
+  def read_from_file(path)
     raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     yaml_data = YAML.load_file(path)
     yaml_data.map do |object|
@@ -33,5 +26,4 @@ class StudentListYAML < StudentListStrategy
       Student.from_hash(new_object)
     end
   end
-
 end

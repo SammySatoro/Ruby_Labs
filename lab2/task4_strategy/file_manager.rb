@@ -1,23 +1,21 @@
-require_relative 'TXTFileStrategy'
-require_relative 'JSONFileStrategy'
-require_relative 'YAMLFileStrategy'
+require_relative 'txt_file_strategy'
+require_relative 'json_file_strategy'
+require_relative 'yaml_file_strategy'
 
 class FileManager
 
-  def read_from_file(source_path)
-    choose_the_strategy(source_path)
-    @current_strategy.read_from_file(source_path)
+  def FileManager.import_from_file(path)
+    self.set_strategy(path)
+    @current_strategy.read_from_file(path)
   end
 
-  def write_to_file(source_path, data)
-    choose_the_strategy(source_path)
-    @current_strategy.write_to_file(source_path, data)
+  def FileManager.export_to_file(path, data)
+    self.set_strategy(path)
+    @current_strategy.write_to_file(path, data)
   end
 
-  private
-
-  def choose_the_strategy(source_path)
-    case File.extname(source_path)
+  def self.set_strategy(path)
+    case File.extname(path)
     when '.txt'
       @current_strategy = TxtFileStrategy.new
     when '.json'

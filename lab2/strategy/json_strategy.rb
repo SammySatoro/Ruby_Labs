@@ -1,27 +1,19 @@
-require_relative 'student_list_super.rb'
+require_relative 'strategy'
 require 'json'
 
-class StudentListJSON < StudentListStrategy
+class JSONStrategy
+  include(Strategy)
 
-  public_class_method :new
-
-  def initialize(path)
-    super
-  end
-
-  def write_to_file(path)
+  def write_to_file(path, data)
     raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
-    students_as_hashes = @students_list.map(&:to_hash)
+    students_as_hashes = data.map(&:to_hash)
 
     File.open(path, 'w') do |file|
       file.write(JSON.pretty_generate(students_as_hashes))
-
     end
   end
 
-  protected
-
-  def init(path)
+  def read_from_file(path)
     raise ArgumentError, "Invalid path: #{path}" unless File.exist?(path)
     data = JSON.parse(File.read(path))
     data.map do |object|
@@ -36,5 +28,3 @@ class StudentListJSON < StudentListStrategy
   end
 
 end
-
-

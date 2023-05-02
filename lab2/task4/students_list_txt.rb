@@ -1,6 +1,6 @@
 require_relative 'student_list_super.rb'
 
-class StudentListTXT < StudentListSuper
+class StudentListTXT < StudentListStrategy
 
   public_class_method :new
 
