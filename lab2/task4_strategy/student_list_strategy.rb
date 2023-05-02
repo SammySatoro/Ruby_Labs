@@ -1,14 +1,16 @@
 require_relative '../task2/student.rb'
 require_relative '../task2/short_student'
 require_relative '../task3/data_list_student_short'
-require_relative 'file_manager'
+require_relative 'file_manager.rb'
 
-class StudentListSuper
-
-  private_class_method :new
+class StudentListStrategy
 
   def initialize(path)
-    @students_list = init(path)
+    @students_list = FileManager.import_from_file(path)
+  end
+
+  def export_to_file(path)
+    FileManager.export_to_file(path, @students_list)
   end
 
   def student_by_id(id)
@@ -68,14 +70,6 @@ class StudentListSuper
 
   def students_count
     @students_list.length
-  end
-
-  protected
-
-  def write_to_file(path)
-  end
-
-  def init(path)
   end
 
 end

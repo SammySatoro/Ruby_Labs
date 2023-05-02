@@ -1,5 +1,5 @@
 ---
-- :id: '0'
+- :id: 0
   :surname: Стрелков
   :first_name: Игорь
   :patronymic: Иванович
@@ -7,7 +7,7 @@
   :phone_number: "+7-918-334-32-58"
   :telegram:
   :email:
-- :id: '2'
+- :id: 2
   :surname: Стронг
   :first_name: Эмиль
   :patronymic: Дмитриевич
@@ -15,7 +15,7 @@
   :phone_number:
   :telegram:
   :email: kefteme@gmail.com
-- :id: '3'
+- :id: 3
   :surname: Here
   :first_name: Ewq
   :patronymic: Weq
