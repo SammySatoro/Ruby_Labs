@@ -1,7 +1,7 @@
 require_relative 'student_list_super.rb'
 require 'json'
 
-class StudentListJSON < StudentListSuper
+class StudentListJSON < StudentListStrategy
 
   public_class_method :new
 

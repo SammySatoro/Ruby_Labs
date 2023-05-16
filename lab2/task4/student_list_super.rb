@@ -2,7 +2,7 @@ require_relative '../task2/student.rb'
 require_relative '../task2/short_student'
 require_relative '../task3/data_list_student_short'
 
-class StudentListSuper
+class StudentListStrategy
 
   private_class_method :new
 

@@ -1,7 +1,7 @@
 require_relative 'student_list_super.rb'
 require 'yaml'
 
-class StudentListYAML < StudentListSuper
+class StudentListYAML < StudentListStrategy
 
   public_class_method :new
 

@@ -1,10 +1,10 @@
 
 module FileStrategy
   def read_the_file(path)
-    raise "read_from_file method is not mplemented!"
+    raise "The 'read_from_file method is not implemented!"
   end
 
   def write_to_file(path)
-    raise "write_to_file method is not mplemented!"
+    raise "The 'write_to_file method is not implemented!"
   end
 end
