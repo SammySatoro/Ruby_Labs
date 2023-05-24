@@ -11,5 +11,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.6.3, ruby-3.0.5-p211) [gem]" level="application" />
   </component>
 </module>
