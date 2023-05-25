@@ -1,0 +1,902 @@
+[
+  {
+    "last_name": "Басов",
+    "first_name": "Захар",
+    "patronymic": "Дамирович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "szSlSttfoC@zaYXj.com"
+  },
+  {
+    "last_name": "Савицкий",
+    "first_name": "Георгий",
+    "patronymic": "Артурович",
+    "git": null,
+    "phone": "+76635654325",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Герасимов",
+    "first_name": "Федор",
+    "patronymic": "Федорович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "UAOVbYsCEB@tzIJh.com"
+  },
+  {
+    "last_name": "Соболев",
+    "first_name": "Андрей",
+    "patronymic": "Всеволодович",
+    "git": "https://github.com/user46",
+    "phone": null,
+    "telegram": "@wJhuHeUW",
+    "email": null
+  },
+  {
+    "last_name": "Мамонта",
+    "first_name": "Мдэ",
+    "patronymic": "Попка",
+    "git": "https://github.com/user1",
+    "phone": null,
+    "telegram": "@IJiYwPMH",
+    "email": null
+  },
+  {
+    "last_name": "Соколов",
+    "first_name": "Артем",
+    "patronymic": "Олегович",
+    "git": null,
+    "phone": "+71043831040",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Артамонов",
+    "first_name": "Георгий",
+    "patronymic": "Ильич",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "uCNFotBowu@aGmYk.com"
+  },
+  {
+    "last_name": "Яковлев",
+    "first_name": "Святослав",
+    "patronymic": "Леонидович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "aDcWOaWDDm@zlifu.com"
+  },
+  {
+    "last_name": "Корчагин",
+    "first_name": "Иван",
+    "patronymic": "Артемович",
+    "git": null,
+    "phone": null,
+    "telegram": "@aBVpCbAt",
+    "email": null
+  },
+  {
+    "last_name": "Ефимов",
+    "first_name": "Лев",
+    "patronymic": "Глебович",
+    "git": null,
+    "phone": null,
+    "telegram": "@tblyjcao",
+    "email": null
+  },
+  {
+    "last_name": "Романов",
+    "first_name": "Богдан",
+    "patronymic": "Дамирович",
+    "git": null,
+    "phone": "+75916685288",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Павлов",
+    "first_name": "Святослав",
+    "patronymic": "Артемович",
+    "git": "https://github.com/user28",
+    "phone": null,
+    "telegram": "@GvrFdYsS",
+    "email": null
+  },
+  {
+    "last_name": "Аникин",
+    "first_name": "Игорь",
+    "patronymic": "Иванович",
+    "git": "https://github.com/user22",
+    "phone": null,
+    "telegram": null,
+    "email": "LmrSjoJJCn@dwovc.com"
+  },
+  {
+    "last_name": "Поляков",
+    "first_name": "Матвей",
+    "patronymic": "Евгеньевич",
+    "git": "https://github.com/user68",
+    "phone": null,
+    "telegram": null,
+    "email": "tiepiATHgI@nuJuu.com"
+  },
+  {
+    "last_name": "Демьянов",
+    "first_name": "Георгий",
+    "patronymic": "Александрович",
+    "git": null,
+    "phone": "+72961316455",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Коновалов",
+    "first_name": "Филипп",
+    "patronymic": "Андреевич",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "XZlOUrlDvF@KpXjb.com"
+  },
+  {
+    "last_name": "Сергеев",
+    "first_name": "Алексей",
+    "patronymic": "Алексеевич",
+    "git": null,
+    "phone": "+77886280745",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Кузнецов",
+    "first_name": "Николай",
+    "patronymic": "Глебович",
+    "git": "https://github.com/user58",
+    "phone": "+77901685689",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Балашов",
+    "first_name": "Игорь",
+    "patronymic": "Лукич",
+    "git": "https://github.com/user24",
+    "phone": "+72644258060",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Столяров",
+    "first_name": "Иван",
+    "patronymic": "Эмирович",
+    "git": "https://github.com/user27",
+    "phone": null,
+    "telegram": "@VJJnfLpi",
+    "email": null
+  },
+  {
+    "last_name": "Туманов",
+    "first_name": "Артем",
+    "patronymic": "Андреевич",
+    "git": "https://github.com/user80",
+    "phone": null,
+    "telegram": "@KhDsbjIB",
+    "email": null
+  },
+  {
+    "last_name": "Ларин",
+    "first_name": "Арсений",
+    "patronymic": "Максимович",
+    "git": "https://github.com/user1",
+    "phone": "+72357323604",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Головин",
+    "first_name": "Максим",
+    "patronymic": "Миронович",
+    "git": "https://github.com/user3",
+    "phone": null,
+    "telegram": "@SBLzDuVM",
+    "email": null
+  },
+  {
+    "last_name": "Мартынов",
+    "first_name": "Антон",
+    "patronymic": "Тимофеевич",
+    "git": "https://github.com/user5",
+    "phone": null,
+    "telegram": "@UBbXOXVN",
+    "email": null
+  },
+  {
+    "last_name": "Кузнецов",
+    "first_name": "Григорий",
+    "patronymic": "Данилович",
+    "git": "https://github.com/user45",
+    "phone": null,
+    "telegram": null,
+    "email": "RzRupPTIzA@VsxmZ.com"
+  },
+  {
+    "last_name": "Мартынов",
+    "first_name": "Лев",
+    "patronymic": "Петрович",
+    "git": null,
+    "phone": null,
+    "telegram": "@hoLCGZMl",
+    "email": null
+  },
+  {
+    "last_name": "Соколов",
+    "first_name": "Александр",
+    "patronymic": "Петрович",
+    "git": null,
+    "phone": "+74555317661",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Туманов",
+    "first_name": "Мирон",
+    "patronymic": "Макарович",
+    "git": null,
+    "phone": null,
+    "telegram": "@GyDrzsQa",
+    "email": null
+  },
+  {
+    "last_name": "Кузнецов",
+    "first_name": "Георгий",
+    "patronymic": "Владиславович",
+    "git": null,
+    "phone": "+76378979751",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Лапшин",
+    "first_name": "Константин",
+    "patronymic": "Максимович",
+    "git": null,
+    "phone": null,
+    "telegram": "@qrmnNtpO",
+    "email": null
+  },
+  {
+    "last_name": "Соколов",
+    "first_name": "Савва",
+    "patronymic": "Всеволодович",
+    "git": null,
+    "phone": "+71052223852",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Соболев",
+    "first_name": "Константин",
+    "patronymic": "Миронович",
+    "git": "https://github.com/user68",
+    "phone": "+76047671070",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Нестеров",
+    "first_name": "Николай",
+    "patronymic": "Тимурович",
+    "git": "https://github.com/user36",
+    "phone": null,
+    "telegram": null,
+    "email": "ELRUKupQWH@oaXev.com"
+  },
+  {
+    "last_name": "Маркин",
+    "first_name": "Федор",
+    "patronymic": "Дамирович",
+    "git": "https://github.com/user4",
+    "phone": null,
+    "telegram": "@biFxPlza",
+    "email": null
+  },
+  {
+    "last_name": "Симонов",
+    "first_name": "Демид",
+    "patronymic": "Семенович",
+    "git": "https://github.com/user28",
+    "phone": "+73893138608",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Романов",
+    "first_name": "Тимофей",
+    "patronymic": "Олегович",
+    "git": "https://github.com/user38",
+    "phone": "+74315940982",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Громов",
+    "first_name": "Федор",
+    "patronymic": "Владимирович",
+    "git": null,
+    "phone": "+77505974332",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Нестеров",
+    "first_name": "Михаил",
+    "patronymic": "Дмитриевич",
+    "git": "https://github.com/user19",
+    "phone": null,
+    "telegram": null,
+    "email": "JxWPxtdrdZ@UEqme.com"
+  },
+  {
+    "last_name": "Лазарев",
+    "first_name": "Илья",
+    "patronymic": "Лукич",
+    "git": "https://github.com/user7",
+    "phone": null,
+    "telegram": null,
+    "email": "wHdQDYfSrW@VkTpt.com"
+  },
+  {
+    "last_name": "Маркин",
+    "first_name": "Филипп",
+    "patronymic": "Петрович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "YDNmQknWXz@qUZSz.com"
+  },
+  {
+    "last_name": "Столяров",
+    "first_name": "Захар",
+    "patronymic": "Даниилович",
+    "git": null,
+    "phone": "+72857543844",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Александров",
+    "first_name": "Иван",
+    "patronymic": "Макарович",
+    "git": null,
+    "phone": null,
+    "telegram": "@aDtwLfEH",
+    "email": null
+  },
+  {
+    "last_name": "Козлов",
+    "first_name": "Илья",
+    "patronymic": "Никитич",
+    "git": null,
+    "phone": "+72006372505",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Головин",
+    "first_name": "Артемий",
+    "patronymic": "Федорович",
+    "git": "https://github.com/user79",
+    "phone": "+72630745713",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Лебедев",
+    "first_name": "Макар",
+    "patronymic": "Лукич",
+    "git": null,
+    "phone": null,
+    "telegram": "@ziiXZWfj",
+    "email": null
+  },
+  {
+    "last_name": "Давыдов",
+    "first_name": "Георгий",
+    "patronymic": "Макарович",
+    "git": "https://github.com/user94",
+    "phone": null,
+    "telegram": null,
+    "email": "MOZtbVVZpx@mzvAz.com"
+  },
+  {
+    "last_name": "Герасимов",
+    "first_name": "Станислав",
+    "patronymic": "Русланович",
+    "git": "https://github.com/user13",
+    "phone": null,
+    "telegram": "@sYFzWSbK",
+    "email": null
+  },
+  {
+    "last_name": "Егоров",
+    "first_name": "Никита",
+    "patronymic": "Алексеевич",
+    "git": "https://github.com/user8",
+    "phone": null,
+    "telegram": "@GpsFATYf",
+    "email": null
+  },
+  {
+    "last_name": "Савин",
+    "first_name": "Евгений",
+    "patronymic": "Миронович",
+    "git": "https://github.com/user32",
+    "phone": null,
+    "telegram": "@YljGfDyX",
+    "email": null
+  },
+  {
+    "last_name": "Макаров",
+    "first_name": "Марк",
+    "patronymic": "Алексеевич",
+    "git": "https://github.com/user76",
+    "phone": null,
+    "telegram": "@RUdCJOyP",
+    "email": null
+  },
+  {
+    "last_name": "Белоусов",
+    "first_name": "Федор",
+    "patronymic": "Серафимович",
+    "git": null,
+    "phone": null,
+    "telegram": "@AhJwIAGu",
+    "email": null
+  },
+  {
+    "last_name": "Басов",
+    "first_name": "Кирилл",
+    "patronymic": "Егорович",
+    "git": null,
+    "phone": null,
+    "telegram": "@HFYSXMcC",
+    "email": null
+  },
+  {
+    "last_name": "Козлов",
+    "first_name": "Семен",
+    "patronymic": "Данилович",
+    "git": "https://github.com/user67",
+    "phone": "+79427840222",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Пономарев",
+    "first_name": "Кирилл",
+    "patronymic": "Владимирович",
+    "git": "https://github.com/user47",
+    "phone": "+74377685355",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Савин",
+    "first_name": "Эмиль",
+    "patronymic": "Кириллович",
+    "git": null,
+    "phone": null,
+    "telegram": "@RToivHyo",
+    "email": null
+  },
+  {
+    "last_name": "Федоров",
+    "first_name": "Евгений",
+    "patronymic": "Николаевич",
+    "git": null,
+    "phone": "+79721936857",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Мартынов",
+    "first_name": "Савва",
+    "patronymic": "Павлович",
+    "git": null,
+    "phone": "+76681777777",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Лебедев",
+    "first_name": "Константин",
+    "patronymic": "Эмирович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "heroZAoQez@KrkMw.com"
+  },
+  {
+    "last_name": "Ананьев",
+    "first_name": "Кирилл",
+    "patronymic": "Тимурович",
+    "git": "https://github.com/user27",
+    "phone": "+72622701197",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Савельев",
+    "first_name": "Савва",
+    "patronymic": "Глебович",
+    "git": "https://github.com/user70",
+    "phone": null,
+    "telegram": null,
+    "email": "lCWESQRINS@ufILu.com"
+  },
+  {
+    "last_name": "Игнатьев",
+    "first_name": "Артемий",
+    "patronymic": "Евгеньевич",
+    "git": "https://github.com/user63",
+    "phone": null,
+    "telegram": null,
+    "email": "uGnRoeZKar@uEoeo.com"
+  },
+  {
+    "last_name": "Бессонов",
+    "first_name": "Семен",
+    "patronymic": "Даниилович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "xoilbBSVmR@Yekgf.com"
+  },
+  {
+    "last_name": "Лазарев",
+    "first_name": "Арсений",
+    "patronymic": "Дамирович",
+    "git": "https://github.com/user9",
+    "phone": "+72489236621",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Павлов",
+    "first_name": "Федор",
+    "patronymic": "Миронович",
+    "git": null,
+    "phone": "+75839706342",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Митрофанов",
+    "first_name": "Даниил",
+    "patronymic": "Давидович",
+    "git": "https://github.com/user6",
+    "phone": null,
+    "telegram": null,
+    "email": "lrhECDXgSU@vrMeU.com"
+  },
+  {
+    "last_name": "Соболев",
+    "first_name": "Илья",
+    "patronymic": "Николаевич",
+    "git": null,
+    "phone": null,
+    "telegram": "@qzvqTkoB",
+    "email": null
+  },
+  {
+    "last_name": "Нестеров",
+    "first_name": "Руслан",
+    "patronymic": "Ильич",
+    "git": null,
+    "phone": null,
+    "telegram": "@EBUrPyfe",
+    "email": null
+  },
+  {
+    "last_name": "Нестеров",
+    "first_name": "Илья",
+    "patronymic": "Андреевич",
+    "git": null,
+    "phone": null,
+    "telegram": "@EMkFqtzy",
+    "email": null
+  },
+  {
+    "last_name": "Архипов",
+    "first_name": "Кирилл",
+    "patronymic": "Ярославович",
+    "git": null,
+    "phone": "+78661292523",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Воробьев",
+    "first_name": "Григорий",
+    "patronymic": "Леонидович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "ToxcqbZgyg@iMbfc.com"
+  },
+  {
+    "last_name": "Кузнецов",
+    "first_name": "Федор",
+    "patronymic": "Кириллович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "jFIyFgScOX@FONmB.com"
+  },
+  {
+    "last_name": "Воронин",
+    "first_name": "Илья",
+    "patronymic": "Всеволодович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "GkWYaYlJHA@JbOTe.com"
+  },
+  {
+    "last_name": "Булатов",
+    "first_name": "Иван",
+    "patronymic": "Львович",
+    "git": "https://github.com/user17",
+    "phone": null,
+    "telegram": null,
+    "email": "dyvBdqYnPe@PgrjF.com"
+  },
+  {
+    "last_name": "Прохоров",
+    "first_name": "Антон",
+    "patronymic": "Эмильевич",
+    "git": "https://github.com/user89",
+    "phone": "+79620535692",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Головин",
+    "first_name": "Дмитрий",
+    "patronymic": "Петрович",
+    "git": "https://github.com/user38",
+    "phone": null,
+    "telegram": null,
+    "email": "JIlxlooLbQ@uOKTn.com"
+  },
+  {
+    "last_name": "Герасимов",
+    "first_name": "Глеб",
+    "patronymic": "Кириллович",
+    "git": "https://github.com/user14",
+    "phone": null,
+    "telegram": "@bPOZfJli",
+    "email": null
+  },
+  {
+    "last_name": "Павлов",
+    "first_name": "Мирон",
+    "patronymic": "Тимурович",
+    "git": null,
+    "phone": "+73902573376",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Колесников",
+    "first_name": "Богдан",
+    "patronymic": "Артемович",
+    "git": "https://github.com/user21",
+    "phone": null,
+    "telegram": "@tHWvGlYg",
+    "email": null
+  },
+  {
+    "last_name": "Калинин",
+    "first_name": "Андрей",
+    "patronymic": "Ильич",
+    "git": "https://github.com/user0",
+    "phone": null,
+    "telegram": "@dWTHiQTe",
+    "email": null
+  },
+  {
+    "last_name": "Кошелев",
+    "first_name": "Мирон",
+    "patronymic": "Федорович",
+    "git": "https://github.com/user12",
+    "phone": null,
+    "telegram": null,
+    "email": "gNDolnAPUc@jjoMK.com"
+  },
+  {
+    "last_name": "Мельников",
+    "first_name": "Савва",
+    "patronymic": "Евгеньевич",
+    "git": "https://github.com/user91",
+    "phone": null,
+    "telegram": "@NCnAWZLQ",
+    "email": null
+  },
+  {
+    "last_name": "Смирнов",
+    "first_name": "Александр",
+    "patronymic": "Данилович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "GpbhtInxlu@XTtaw.com"
+  },
+  {
+    "last_name": "Игнатьев",
+    "first_name": "Артем",
+    "patronymic": "Давидович",
+    "git": null,
+    "phone": "+79372301046",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Лебедев",
+    "first_name": "Руслан",
+    "patronymic": "Александрович",
+    "git": null,
+    "phone": "+73481902957",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Давыдов",
+    "first_name": "Тимур",
+    "patronymic": "Эмильевич",
+    "git": null,
+    "phone": null,
+    "telegram": "@pLhiRSuI",
+    "email": null
+  },
+  {
+    "last_name": "Соболев",
+    "first_name": "Егор",
+    "patronymic": "Миронович",
+    "git": "https://github.com/user21",
+    "phone": null,
+    "telegram": "@GYrKDWFF",
+    "email": null
+  },
+  {
+    "last_name": "Козлов",
+    "first_name": "Эмиль",
+    "patronymic": "Алексеевич",
+    "git": null,
+    "phone": null,
+    "telegram": "@zzYdukOx",
+    "email": null
+  },
+  {
+    "last_name": "Голованов",
+    "first_name": "Даниил",
+    "patronymic": "Эмирович",
+    "git": null,
+    "phone": "+77728118296",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Головин",
+    "first_name": "Александр",
+    "patronymic": "Артемович",
+    "git": null,
+    "phone": "+72654802531",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Воробьев",
+    "first_name": "Андрей",
+    "patronymic": "Петрович",
+    "git": null,
+    "phone": null,
+    "telegram": "@qBOMrtaf",
+    "email": null
+  },
+  {
+    "last_name": "Прохоров",
+    "first_name": "Роман",
+    "patronymic": "Дамирович",
+    "git": null,
+    "phone": null,
+    "telegram": "@wfiRrzVa",
+    "email": null
+  },
+  {
+    "last_name": "Игнатьев",
+    "first_name": "Андрей",
+    "patronymic": "Ильич",
+    "git": null,
+    "phone": "+79785846484",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Соловьев",
+    "first_name": "Михаил",
+    "patronymic": "Глебович",
+    "git": "https://github.com/user86",
+    "phone": "+77702514762",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Громов",
+    "first_name": "Эмиль",
+    "patronymic": "Владиславович",
+    "git": null,
+    "phone": null,
+    "telegram": "@cTLKwdfr",
+    "email": null
+  },
+  {
+    "last_name": "Яковлев",
+    "first_name": "Константин",
+    "patronymic": "Александрович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "IQhvVqLkQM@pvdxj.com"
+  },
+  {
+    "last_name": "Калинин",
+    "first_name": "Мирон",
+    "patronymic": "Семенович",
+    "git": null,
+    "phone": "+74050600738",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Андрианов",
+    "first_name": "Артем",
+    "patronymic": "Макарович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "QMmzwDbKjh@pjcjd.com"
+  },
+  {
+    "last_name": "Смирнов",
+    "first_name": "Роман",
+    "patronymic": "Русланович",
+    "git": null,
+    "phone": "+74210443060",
+    "telegram": null,
+    "email": null
+  },
+  {
+    "last_name": "Головин",
+    "first_name": "Никита",
+    "patronymic": "Евгеньевич",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "zcEGjMYVtX@zIFQm.com"
+  },
+  {
+    "last_name": "Архипов",
+    "first_name": "Евгений",
+    "patronymic": "Макарович",
+    "git": null,
+    "phone": null,
+    "telegram": null,
+    "email": "MxONursBNe@HvQEO.com"
+  }
+]
