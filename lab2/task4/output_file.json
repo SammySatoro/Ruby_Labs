@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 0,
     "surname": "Стрелков",
     "first_name": "Игорь",
     "patronymic": "Иванович",
@@ -10,7 +10,7 @@
     "email": null
   },
   {
-    "id": "2",
+    "id": 2,
     "surname": "Стронг",
     "first_name": "Эмиль",
     "patronymic": "Дмитриевич",
@@ -20,7 +20,7 @@
     "email": "kefteme@gmail.com"
   },
   {
-    "id": "3",
+    "id": 3,
     "surname": "Here",
     "first_name": "Ewq",
     "patronymic": "Weq",
