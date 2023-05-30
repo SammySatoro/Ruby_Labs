@@ -16,7 +16,7 @@ class SelectChangeableController
       patronymic: /(^[А-Я][а-я]+$)|(^[A-Z][a-z]+$)/,
       git: /^https:\/\/github\.com\/([A-Za-z0-9_.-]+)\/?$/,
       phone: /^\+?[78] ?[(-]?\d{3} ?[)-]?[ -]?\d{3}[ -]?\d{2}[ -]?\d{2}$/,
-      telegram: /\A@[\w_.]{2,32}\z/,
+      telegram: /^@[\w_.]{2,32}$/,
       email: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
     }
 

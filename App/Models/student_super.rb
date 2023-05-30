@@ -5,7 +5,7 @@ class StudentSuper
 
   GIT = /^https:\/\/github\.com\/([A-Za-z0-9_.-]+)\/?$/
   PHONE = /^\+?[78] ?[(-]?\d{3} ?[)-]?[ -]?\d{3}[ -]?\d{2}[ -]?\d{2}$/
-  TELEGRAM = /\A@[\w_.]{2,32}\z/
+  TELEGRAM = /@[\w_.]{2,32}/
   EMAIL = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
   def StudentSuper.valid_git?(str)

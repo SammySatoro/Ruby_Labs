@@ -2,9 +2,9 @@ require 'sqlite3'
 
 def get_full_name
   {
-      arr_last_name: IO.readlines('/home/sammysatoro/RubyProjects/Ruby_Labs/lab3/dataset_for_db/first_name.txt').map! { |el| el.chomp! },
-      arr_first_name: IO.readlines('/home/sammysatoro/RubyProjects/Ruby_Labs/lab3/dataset_for_db/first_name.txt').map! { |el| el.chomp! },
-      arr_patronymic: IO.readlines('/home/sammysatoro/RubyProjects/Ruby_Labs/lab3/dataset_for_db/patronymic.txt').map! { |el| el.chomp! }
+      arr_last_name: IO.readlines('/home/sammysatoro/RubymineProjects/Ruby_Labs/lab3/dataset_for_db/first_name.txt').map! { |el| el.chomp! },
+      arr_first_name: IO.readlines('/home/sammysatoro/RubymineProjects/Ruby_Labs/lab3/dataset_for_db/first_name.txt').map! { |el| el.chomp! },
+      arr_patronymic: IO.readlines('/home/sammysatoro/RubymineProjects/Ruby_Labs/lab3/dataset_for_db/patronymic.txt').map! { |el| el.chomp! }
   }
 end
 

@@ -12,3 +12,4 @@ rescue SQLite3::Exception => sql_error
   puts "SQL error\n#{sql_error}"
 end
 
+system "ruby "
